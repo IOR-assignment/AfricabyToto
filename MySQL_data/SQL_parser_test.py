@@ -1,6 +1,14 @@
+'''
+
+Short hacked-together python program that takes a txt file consisting of the data
+Copy-pasted from the tables in the thesis pdf, and converts them to SQL commands that
+can be used to make a SQL database without typing in every single entry.
+
+'''
+
 import numpy as np
 
-data = np.genfromtxt("C:\\Users\\midas\\Desktop\\data.txt", dtype=[('myint1','i8'),('myint2','i8'),('mystring1','S3'),('mystring2','S3'),('mystring3','S5'),('mystring4','S5'),('mystring5','S5'),('mystring6','S5')])
+data = np.genfromtxt("data.txt", dtype=[('myint1','i8'),('myint2','i8'),('mystring1','S3'),('mystring2','S3'),('mystring3','S5'),('mystring4','S5'),('mystring5','S5'),('mystring6','S5')])
 
 
 SQL_command = ""
